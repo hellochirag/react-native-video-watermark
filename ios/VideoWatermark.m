@@ -35,7 +35,7 @@ RCT_EXPORT_METHOD(convert:(NSString *)videoUri imageUri:(nonnull NSString *)imag
 
     UIGraphicsBeginImageContext(sizeOfVideo);
     //water mark chnage here size
-    [myImage drawInRect:CGRectMake(50, 50, 120, 120)];
+    [myImage drawInRect:CGRectMake(0, 200, 120, 120)];
     UIImage *destImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     myImage = destImage;
@@ -43,7 +43,7 @@ RCT_EXPORT_METHOD(convert:(NSString *)videoUri imageUri:(nonnull NSString *)imag
 
     CALayer *layerCa = [CALayer layer];
     layerCa.contents = (id)myImage.CGImage;
-    layerCa.frame = CGRectMake(0, 0, sizeOfVideo.width, sizeOfVideo.height);
+    layerCa.frame = CGRectMake(120, 0, sizeOfVideo.width-120, sizeOfVideo.height);
     layerCa.opacity = 1.0;
 
     CALayer *parentLayer=[CALayer layer];
