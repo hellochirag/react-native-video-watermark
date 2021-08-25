@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-video-watermark.git",
-    "baseUrl": "https://github.com/github_account/react-native-video-watermark"
+    "url": "git+https://github.com/hellochirag/react-native-video-watermark.git",
+    "baseUrl": "https://github.com/hellochirag/react-native-video-watermark"
   },
   "keywords": [
     "react-native"
